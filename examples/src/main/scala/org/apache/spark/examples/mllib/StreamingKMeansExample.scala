@@ -52,7 +52,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
  */
 object StreamingKMeansExample {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     if (args.length != 5) {
       System.err.println(
         "Usage: StreamingKMeansExample " +

@@ -25,7 +25,7 @@ import org.apache.spark.ml.linalg.Vectors
 import org.apache.spark.sql.SparkSession
 
 object ChiSqSelectorExample {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val spark = SparkSession
       .builder
       .appName("ChiSqSelectorExample")

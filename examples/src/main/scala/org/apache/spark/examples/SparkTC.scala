@@ -41,7 +41,7 @@ object SparkTC {
     edges.toSeq
   }
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val spark = SparkSession
       .builder
       .appName("SparkTC")

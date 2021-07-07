@@ -16,9 +16,7 @@
  */
 package org.apache.spark.examples.sql
 
-// $example on:programmatic_schema$
 import org.apache.spark.sql.Row
-// $example off:programmatic_schema$
 // $example on:init_session$
 import org.apache.spark.sql.SparkSession
 // $example off:init_session$
@@ -34,7 +32,7 @@ object SparkSQLExample {
   case class Person(name: String, age: Long)
   // $example off:create_ds$
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     // $example on:init_session$
     val spark = SparkSession
       .builder()

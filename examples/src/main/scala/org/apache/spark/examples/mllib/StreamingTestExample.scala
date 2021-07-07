@@ -44,7 +44,7 @@ import org.apache.spark.util.Utils
  */
 object StreamingTestExample {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     if (args.length != 3) {
       // scalastyle:off println
       System.err.println(

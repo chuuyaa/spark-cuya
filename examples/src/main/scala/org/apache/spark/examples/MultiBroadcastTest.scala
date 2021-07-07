@@ -26,7 +26,7 @@ import org.apache.spark.sql.SparkSession
  * Usage: MultiBroadcastTest [partitions] [numElem]
  */
 object MultiBroadcastTest {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
 
     val spark = SparkSession
       .builder

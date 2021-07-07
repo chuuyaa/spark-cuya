@@ -24,7 +24,7 @@ import org.apache.spark.sql.SparkSession
 
 /** Computes an approximation to pi */
 object SparkPi {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val spark = SparkSession
       .builder
       .appName("Spark Pi")

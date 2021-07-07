@@ -48,7 +48,7 @@ object MovieLensALS {
       numProductBlocks: Int = -1,
       implicitPrefs: Boolean = false) extends AbstractParams[Params]
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val defaultParams = Params()
 
     val parser = new OptionParser[Params]("MovieLensALS") {
@@ -155,7 +155,7 @@ object MovieLensALS {
     val numTest = test.count()
     println(s"Training: $numTraining, test: $numTest.")
 
-    ratings.unpersist()
+    ratings.unpersist(blocking = false)
 
     val model = new ALS()
       .setRank(params.rank)

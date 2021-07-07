@@ -20,7 +20,7 @@ package org.apache.spark.examples
 import org.apache.spark.sql.SparkSession
 
 object ExceptionHandlingTest {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val spark = SparkSession
       .builder
       .appName("ExceptionHandlingTest")

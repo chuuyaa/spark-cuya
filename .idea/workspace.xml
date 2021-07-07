@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83d3a707-06d6-4277-a6b4-a2d741072bbe" name="Default Changelist" comment="first">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/spark-cuya.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/automaton-1.11-8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/generex-1.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/guice-3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/guice-servlet-3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/javax.inject-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/jetty-6.1.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/mesos-1.4.0-shaded-protobuf.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/okio-1.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/zjsonpatch-0.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-AnchorJS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-CC0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-antlr.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-arpack.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-automaton.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-bootstrap.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-cloudpickle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-d3.min.js.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-dagre-d3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-datatables.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-f2j.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-graphlib-dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-heapq.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-janino.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-javassist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-javolution.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-jline.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-jodd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-join.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-jquery.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-json-formatter.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-jtransforms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-kryo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-leveldbjni.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-machinist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-matchMedia-polyfill.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-minlog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-modernizr.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-mustache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-netlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-paranamer.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-pmml-model.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-protobuf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-py4j.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-pyrolite.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-reflectasm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-respond.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-sbt-launch-lib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-scala.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-scopt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-slf4j.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-sorttable.js.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-spire.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-vis-timeline.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-xmlenc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-zstd-jni.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licenses/LICENSE-zstd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RELEASE" beforeDir="false" afterPath="$PROJECT_DIR$/RELEASE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/docker-image-tool.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/docker-image-tool.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/load-spark-env.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/bin/load-spark-env.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/load-spark-env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/load-spark-env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pyspark" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pyspark" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pyspark2.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pyspark2.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/spark-class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/spark-class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/spark-class2.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/bin/spark-class2.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/log4j.properties.template" beforeDir="false" afterPath="$PROJECT_DIR$/conf/log4j.properties.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/metrics.properties.template" beforeDir="false" afterPath="$PROJECT_DIR$/conf/metrics.properties.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/spark-env.sh.template" beforeDir="false" afterPath="$PROJECT_DIR$/conf/spark-env.sh.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/jars/scopt_2.12-3.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/jars/spark-examples_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/JavaTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/JavaTC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaALSExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaALSExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaBisectingKMeansExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaBisectingKMeansExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaDecisionTreeClassificationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaDecisionTreeClassificationExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaFMClassifierExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaFMRegressorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaGradientBoostedTreeClassifierExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaGradientBoostedTreeClassifierExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaOneHotEncoderExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaPrefixSpanExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaPrefixSpanExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaRandomForestClassifierExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaRandomForestClassifierExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaRobustScalerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaCorrelationsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaCorrelationsExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaRandomForestClassificationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaRandomForestClassificationExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaRankingMetricsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaRankingMetricsExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/JavaSQLDataSourceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/JavaSQLDataSourceExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedScalar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedUntypedAggregation.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/JavaUserDefinedUntypedAggregation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/streaming/JavaStructuredKerberizedKafkaWordCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/streaming/JavaStructuredSessionization.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/sql/streaming/JavaStructuredSessionization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaCustomReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaCustomReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaDirectKerberizedKafkaWordCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaNetworkWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaNetworkWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaRecoverableNetworkWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaRecoverableNetworkWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaSqlNetworkWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/streaming/JavaSqlNetworkWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/bisecting_k_means_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/ml/bisecting_k_means_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/fm_classifier_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/fm_regressor_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/interaction_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/onehot_encoder_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/power_iteration_clustering_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/robust_scaler_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/ml/train_validation_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/ml/train_validation_split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/mllib/bisecting_k_means_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/mllib/bisecting_k_means_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/mllib/isotonic_regression_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/mllib/isotonic_regression_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/mllib/multi_class_metrics_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/mllib/multi_class_metrics_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/mllib/ranking_metrics_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/mllib/ranking_metrics_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/mllib/standard_scaler_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/mllib/standard_scaler_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/sql/arrow.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/sql/arrow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/sql/datasource.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/sql/datasource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/sql/hive.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/sql/hive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/streaming/recoverable_network_wordcount.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/streaming/recoverable_network_wordcount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/python/streaming/sql_network_wordcount.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/python/streaming/sql_network_wordcount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/r/RSparkSQLExample.R" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/r/RSparkSQLExample.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/r/ml/powerIterationClustering.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/r/ml/prefixSpan.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/resources/dir1/dir2/file2.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/resources/dir1/file1.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/resources/dir1/file3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/AccumulatorMetricsTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/BroadcastTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/BroadcastTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/DFSReadWriteTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/DFSReadWriteTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/DriverSubmissionTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/DriverSubmissionTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ExceptionHandlingTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ExceptionHandlingTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/GroupByTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/GroupByTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/HdfsTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/HdfsTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalALS.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalALS.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalFileLR.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalFileLR.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalKMeans.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalKMeans.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalLR.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalLR.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalPi.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LocalPi.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LogQuery.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/LogQuery.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/MultiBroadcastTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/MultiBroadcastTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SimpleSkewedGroupByTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SimpleSkewedGroupByTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SkewedGroupByTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SkewedGroupByTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkALS.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkALS.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkHdfsLR.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkHdfsLR.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkKMeans.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkKMeans.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkLR.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkLR.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkPageRank.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkPageRank.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkPi.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkPi.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkRemoteFileTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkRemoteFileTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkTC.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/SparkTC.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/graphx/LiveJournalPageRank.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/graphx/LiveJournalPageRank.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/graphx/SynthBenchmark.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/graphx/SynthBenchmark.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/ALSExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/ALSExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/BisectingKMeansExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/BisectingKMeansExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/ChiSqSelectorExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/ChiSqSelectorExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/CountVectorizerExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/CountVectorizerExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DataFrameExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DataFrameExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DecisionTreeClassificationExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DecisionTreeClassificationExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DecisionTreeExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DecisionTreeExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DeveloperApiExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/DeveloperApiExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/FMClassifierExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/FMRegressorExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/FPGrowthExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/FPGrowthExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/GBTExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/GBTExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/GradientBoostedTreeClassifierExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/GradientBoostedTreeClassifierExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/IndexToStringExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/IndexToStringExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/LinearRegressionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/LinearRegressionExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/OneHotEncoderExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/OneVsRestExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/OneVsRestExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/PrefixSpanExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/PrefixSpanExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/QuantileDiscretizerExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/QuantileDiscretizerExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/RandomForestClassifierExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/RandomForestClassifierExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/RandomForestExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/RandomForestExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/RobustScalerExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/SQLTransformerExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/SQLTransformerExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/TfIdfExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/TfIdfExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/UnaryTransformerExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/UnaryTransformerExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/Word2VecExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/Word2VecExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/AssociationRulesExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/AssociationRulesExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/BinaryClassification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/BinaryClassification.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/BisectingKMeansExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/BisectingKMeansExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/Correlations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/Correlations.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/CosineSimilarity.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/CosineSimilarity.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeRunner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeRunner.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/DenseKMeans.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/DenseKMeans.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/ElementwiseProductExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/ElementwiseProductExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/FPGrowthExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/FPGrowthExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/GaussianMixtureExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/GaussianMixtureExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/GradientBoostedTreesRunner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/GradientBoostedTreesRunner.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/HypothesisTestingExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/HypothesisTestingExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/KMeansExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/KMeansExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/LDAExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/LDAExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/LatentDirichletAllocationExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/LatentDirichletAllocationExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/MovieLensALS.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/MovieLensALS.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/MultivariateSummarizer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/MultivariateSummarizer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/PowerIterationClusteringExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/PowerIterationClusteringExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/PrefixSpanExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/PrefixSpanExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/RandomRDDGeneration.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/RandomRDDGeneration.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/RankingMetricsExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/RankingMetricsExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/SampledRDDs.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/SampledRDDs.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/SimpleFPGrowth.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/SimpleFPGrowth.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/SparseNaiveBayes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/SparseNaiveBayes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/StreamingKMeansExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/StreamingKMeansExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/StreamingLogisticRegression.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/StreamingLogisticRegression.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/StreamingTestExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/StreamingTestExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/TallSkinnyPCA.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/TallSkinnyPCA.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/TallSkinnySVD.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/TallSkinnySVD.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/RDDRelation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/RDDRelation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/SQLDataSourceExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/SQLDataSourceExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/SimpleTypedAggregator.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/SparkSQLExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/SparkSQLExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/UserDefinedScalar.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/UserDefinedUntypedAggregation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/UserDefinedUntypedAggregation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/hive/SparkHiveExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/hive/SparkHiveExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredKerberizedKafkaWordCount.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCountWindowed.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCountWindowed.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/CustomReceiver.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/CustomReceiver.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/DirectKafkaWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/DirectKafkaWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/DirectKerberizedKafkaWordCount.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/HdfsWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/HdfsWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/NetworkWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/NetworkWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/QueueStream.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/QueueStream.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/RawNetworkGrep.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/RawNetworkGrep.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/RecoverableNetworkWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/RecoverableNetworkWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/SqlNetworkWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/SqlNetworkWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/StatefulNetworkWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/StatefulNetworkWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/StreamingExamples.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/StreamingExamples.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewGenerator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewGenerator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewStream.scala" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewStream.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/scripts/getGpusResources.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/JLargeArrays-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/JTransforms-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/algebra_2.12-2.0.0-M2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/antlr4-runtime-4.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/aopalliance-repackaged-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/arrow-format-0.15.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/arrow-memory-0.15.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/arrow-vector-0.15.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/audience-annotations-0.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/breeze-macros_2.12-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/breeze_2.12-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/cats-kernel_2.12-2.0.0-M4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/chill-java-0.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/chill_2.12-0.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/commons-compress-1.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/commons-lang3-3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/commons-text-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/curator-client-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/curator-framework-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/curator-recipes-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/flatbuffers-java-1.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-annotations-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-auth-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-client-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-common-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-hdfs-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-app-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-common-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-core-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-jobclient-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-shuffle-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-yarn-api-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-yarn-client-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-yarn-common-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hadoop-yarn-server-common-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hive-storage-api-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hk2-api-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hk2-locator-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/hk2-utils-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/htrace-core-3.1.0-incubating.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/httpcore-4.4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/istack-commons-runtime-3.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jackson-annotations-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jackson-core-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jackson-databind-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jackson-module-paranamer-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jackson-module-scala_2.12-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jakarta.inject-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jakarta.ws.rs-api-2.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jakarta.xml.bind-api-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/javassist-3.25.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jaxb-runtime-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jcl-over-slf4j-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jersey-client-2.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jersey-common-2.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jersey-container-servlet-2.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jersey-container-servlet-core-2.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jersey-hk2-2.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jersey-media-jaxb-2.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jersey-server-2.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jetty-sslengine-6.1.26.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/json4s-ast_2.12-3.6.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/json4s-core_2.12-3.6.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/json4s-jackson_2.12-3.6.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/json4s-scalap_2.12-3.6.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jsp-api-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jsr305-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/jul-to-slf4j-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/lz4-java-1.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/machinist_2.12-0.6.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/macro-compat_2.12-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/metrics-core-4.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/metrics-graphite-4.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/metrics-jmx-4.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/metrics-json-4.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/metrics-jvm-4.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/orc-core-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/orc-mapreduce-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/orc-shims-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/osgi-resource-locator-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/py4j-0.10.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/pyrolite-4.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/scala-collection-compat_2.12-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/scala-compiler-2.12.10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/yarn/spark-2.4.8-yarn-shuffle.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/scala-library-2.12.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/scala-parser-combinators_2.12-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/scala-reflect-2.12.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/scala-xml_2.12-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/scalaj-http_2.12-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/shapeless_2.12-2.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/slf4j-api-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/slf4j-log4j12-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/snappy-java-1.1.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-catalyst_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-core_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-graphx_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-kvstore_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-launcher_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-mllib-local_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-mllib_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-network-common_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-network-shuffle_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-repl_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-sketch_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-sql_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-streaming_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-tags_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spark-unsafe_2.12-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spire-macros_2.12-0.17.0-M1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spire-platform_2.12-0.17.0-M1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spire-util_2.12-0.17.0-M1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/spire_2.12-0.17.0-M1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/stream-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/threeten-extra-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/univocity-parsers-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/xbean-asm7-shaded-4.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/xercesImpl-2.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/zookeeper-3.4.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/bindings/R/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/bindings/R/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/bindings/python/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/bindings/python/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/dockerfiles/spark/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/tests/pyfiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/tests/pyfiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/python/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/python/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/_static/copybutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/make2.bat" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/make2.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/pyspark.ml.rst" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/pyspark.ml.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/pyspark.resource.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/pyspark.rst" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/pyspark.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/pyspark.sql.rst" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/pyspark.sql.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/docs/pyspark.streaming.rst" beforeDir="false" afterPath="$PROJECT_DIR$/python/docs/pyspark.streaming.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/lib/py4j-0.10.9-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/lib/pyspark.zip" beforeDir="false" afterPath="$PROJECT_DIR$/python/lib/pyspark.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/accumulators.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/accumulators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/broadcast.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/broadcast.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/cloudpickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/cloudpickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/context.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/context.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/daemon.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/daemon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/java_gateway.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/java_gateway.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/feature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/fpm.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/fpm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/linalg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/linalg/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/param/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/param/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/param/_shared_params_code_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/param/_shared_params_code_gen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/param/shared.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/param/shared.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/recommendation.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/recommendation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/stat.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/stat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_algorithms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_feature.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_linalg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_param.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_persistence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_stat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_training_summary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_tuning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tests/test_wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/tuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/ml/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/ml/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/feature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/fpm.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/fpm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/linalg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/linalg/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/linalg/distributed.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/linalg/distributed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/random.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/recommendation.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/recommendation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/stat/_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/stat/_statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tests/test_algorithms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tests/test_feature.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tests/test_linalg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tests/test_stat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tests/test_streaming_algorithms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tests/test_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/mllib/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/mllib/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/profiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/profiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/rdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/rdd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/resource.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/resultiterable.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/resultiterable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/shuffle.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/shuffle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/avro/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/avro/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/column.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/column.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/context.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/context.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/dataframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/dataframe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/conversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/group_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/map_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/typehints.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/pandas/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/readwriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/readwriter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/streaming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/streaming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_arrow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_catalog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_column.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_dataframe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_datasources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_group.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_cogrouped_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_grouped_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_udf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_udf_grouped_agg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_udf_scalar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_udf_typehints.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_pandas_udf_window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_readwriter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_serde.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_session.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_streaming.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_udf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/tests/test_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/types.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/types.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/udf.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/udf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/sql/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/sql/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/storagelevel.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/storagelevel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/context.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/streaming/context.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/dstream.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/streaming/dstream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/kinesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/streaming/kinesis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/tests/test_context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/tests/test_dstream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/tests/test_kinesis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/streaming/tests/test_listener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/taskcontext.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/taskcontext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/testing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/testing/mllibutils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/testing/mlutils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/testing/sqlutils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/testing/streamingutils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/testing/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_appsubmit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_broadcast.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_daemon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_pin_thread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_profiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_rdd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_rddbarrier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_readwrite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_shuffle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_taskcontext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/tests/test_worker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/pyspark/worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/pyspark/worker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/run-tests" beforeDir="false" afterPath="$PROJECT_DIR$/python/run-tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/run-tests-with-coverage" beforeDir="false" afterPath="$PROJECT_DIR$/python/run-tests-with-coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/run-tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/run-tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbin/spark-config.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sbin/spark-config.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbin/start-history-server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sbin/start-history-server.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbin/start-master.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sbin/start-master.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbin/start-mesos-shuffle-service.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sbin/start-mesos-shuffle-service.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbin/start-slave.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sbin/start-slave.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbin/start-thriftserver.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sbin/start-thriftserver.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1uNXfTyFB394d5CD5BRSzYV1RSs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83d3a707-06d6-4277-a6b4-a2d741072bbe" name="Default Changelist" comment="" />
+      <created>1624507126565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624507126565</updated>
+      <workItem from="1624507129965" duration="12160000" />
+      <workItem from="1624635660995" duration="586000" />
+      <workItem from="1624638275525" duration="1171000" />
+      <workItem from="1624678954013" duration="588000" />
+      <workItem from="1625632051334" duration="412000" />
+    </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1624513785260</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624513785260</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first">
+      <created>1624561818523</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624561818523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
+  </component>
+</project>

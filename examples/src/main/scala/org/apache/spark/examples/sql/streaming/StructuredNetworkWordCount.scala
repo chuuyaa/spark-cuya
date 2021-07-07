@@ -34,7 +34,7 @@ import org.apache.spark.sql.SparkSession
  *    localhost 9999`
  */
 object StructuredNetworkWordCount {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     if (args.length < 2) {
       System.err.println("Usage: StructuredNetworkWordCount <hostname> <port>")
       System.exit(1)

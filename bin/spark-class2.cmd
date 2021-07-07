@@ -62,7 +62,7 @@ if not "x%JAVA_HOME%"=="x" (
 )
 
 rem The launcher library prints the command to be executed in a single line suitable for being
-rem executed by the batch interpreter. Soan  read all the output of the launcher into a variable.
+rem executed by the batch interpreter. So read all the output of the launcher into a variable.
 :gen
 set LAUNCHER_OUTPUT=%temp%\spark-class-launcher-output-%RANDOM%.txt
 rem SPARK-28302: %RANDOM% would return the same number if we call it instantly after last call,
@@ -72,8 +72,6 @@ if exist %LAUNCHER_OUTPUT% goto :gen
 "%RUNNER%" -Xmx128m -cp "%LAUNCH_CLASSPATH%" org.apache.spark.launcher.Main %* > %LAUNCHER_OUTPUT%
 for /f "tokens=*" %%i in (%LAUNCHER_OUTPUT%) do (
   set SPARK_CMD=%%i
-  rem echo "[CUYATEST] THE LAUNCHER OUTPUT - /n %%i  /n End of launcher output"
 )
 rem del %LAUNCHER_OUTPUT%
-rem echo "[CUYATEST] %SPARK_CMD%"
 %SPARK_CMD%

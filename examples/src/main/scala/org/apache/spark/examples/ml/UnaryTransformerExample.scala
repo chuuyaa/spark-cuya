@@ -82,7 +82,7 @@ object UnaryTransformerExample {
   object MyTransformer extends DefaultParamsReadable[MyTransformer]
   // $example off$
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val spark = SparkSession
       .builder()
       .appName("UnaryTransformerExample")

@@ -49,7 +49,7 @@ object SparkKMeans {
     bestIndex
   }
 
-  def showWarning(): Unit = {
+  def showWarning() {
     System.err.println(
       """WARN: This is a naive implementation of KMeans Clustering and is given as an example!
         |Please use org.apache.spark.ml.clustering.KMeans
@@ -57,7 +57,7 @@ object SparkKMeans {
       """.stripMargin)
   }
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
 
     if (args.length < 3) {
       System.err.println("Usage: SparkKMeans <file> <k> <convergeDist>")

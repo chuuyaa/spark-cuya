@@ -26,7 +26,7 @@ import org.apache.spark.rdd.RDD
 
 object SimpleFPGrowth {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
 
     val conf = new SparkConf().setAppName("SimpleFPGrowth")
     val sc = new SparkContext(conf)

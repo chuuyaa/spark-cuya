@@ -35,7 +35,7 @@ object SampledRDDs {
   case class Params(input: String = "data/mllib/sample_binary_classification_data.txt")
     extends AbstractParams[Params]
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val defaultParams = Params()
 
     val parser = new OptionParser[Params]("SampledRDDs") {

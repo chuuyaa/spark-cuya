@@ -22,7 +22,7 @@
 # Environment Variables
 #
 #   SPARK_WORKER_INSTANCES  The number of worker instances to run on this
-#                           slave.  Default is 1. Note it has been deprecate since Spark 3.0.
+#                           slave.  Default is 1.
 #   SPARK_WORKER_PORT       The base port number for the first worker. If set,
 #                           subsequent workers will increment this number.  If
 #                           unset, Spark will find a valid port number, but
@@ -43,8 +43,7 @@ if [[ $# -lt 1 ]] || [[ "$@" = *--help ]] || [[ "$@" = *-h ]]; then
   echo "Usage: ./sbin/start-slave.sh <master> [options]"
   pattern="Usage:"
   pattern+="\|Using Spark's default log4j profile:"
-  pattern+="\|Started daemon with process name"
-  pattern+="\|Registered signal handler for"
+  pattern+="\|Registered signal handlers for"
 
   "${SPARK_HOME}"/bin/spark-class $CLASS --help 2>&1 | grep -v "$pattern" 1>&2
   exit 1

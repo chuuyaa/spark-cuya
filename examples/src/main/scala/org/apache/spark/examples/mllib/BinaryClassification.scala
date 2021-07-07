@@ -58,7 +58,7 @@ object BinaryClassification {
       regType: RegType = L2,
       regParam: Double = 0.01) extends AbstractParams[Params]
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val defaultParams = Params()
 
     val parser = new OptionParser[Params]("BinaryClassification") {
@@ -117,7 +117,7 @@ object BinaryClassification {
     val numTest = test.count()
     println(s"Training: $numTraining, test: $numTest.")
 
-    examples.unpersist()
+    examples.unpersist(blocking = false)
 
     val updater = params.regType match {
       case L1 => new L1Updater()

@@ -49,7 +49,7 @@ object SparkHdfsLR {
     DataPoint(new DenseVector(x), y)
   }
 
-  def showWarning(): Unit = {
+  def showWarning() {
     System.err.println(
       """WARN: This is a naive implementation of Logistic Regression and is given as an example!
         |Please use org.apache.spark.ml.classification.LogisticRegression
@@ -57,7 +57,7 @@ object SparkHdfsLR {
       """.stripMargin)
   }
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
 
     if (args.length < 2) {
       System.err.println("Usage: SparkHdfsLR <file> <iters>")

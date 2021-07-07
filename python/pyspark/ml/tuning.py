@@ -22,7 +22,7 @@ import numpy as np
 
 from pyspark import since, keyword_only
 from pyspark.ml import Estimator, Model
-from pyspark.ml.common import _py2java, _java2py
+from pyspark.ml.common import _py2java
 from pyspark.ml.param import Params, Param, TypeConverters
 from pyspark.ml.param.shared import HasCollectSubModels, HasParallelism, HasSeed
 from pyspark.ml.util import *
@@ -88,14 +88,8 @@ class ParamGridBuilder(object):
     def addGrid(self, param, values):
         """
         Sets the given parameters in this grid to fixed values.
-
-        param must be an instance of Param associated with an instance of Params
-        (such as Estimator or Transformer).
         """
-        if isinstance(param, Param):
-            self._param_grid[param] = values
-        else:
-            raise TypeError("param must be an instance of Param")
+        self._param_grid[param] = values
 
         return self
 
@@ -128,7 +122,7 @@ class ParamGridBuilder(object):
         return [dict(to_key_value_pairs(keys, prod)) for prod in itertools.product(*grid_values)]
 
 
-class _ValidatorParams(HasSeed):
+class ValidatorParams(HasSeed):
     """
     Common params for TrainValidationSplit and CrossValidator.
     """
@@ -139,21 +133,36 @@ class _ValidatorParams(HasSeed):
         Params._dummy(), "evaluator",
         "evaluator used to select hyper-parameters that maximize the validator metric")
 
-    @since("2.0.0")
+    def setEstimator(self, value):
+        """
+        Sets the value of :py:attr:`estimator`.
+        """
+        return self._set(estimator=value)
+
     def getEstimator(self):
         """
         Gets the value of estimator or its default value.
         """
         return self.getOrDefault(self.estimator)
 
-    @since("2.0.0")
+    def setEstimatorParamMaps(self, value):
+        """
+        Sets the value of :py:attr:`estimatorParamMaps`.
+        """
+        return self._set(estimatorParamMaps=value)
+
     def getEstimatorParamMaps(self):
         """
         Gets the value of estimatorParamMaps or its default value.
         """
         return self.getOrDefault(self.estimatorParamMaps)
 
-    @since("2.0.0")
+    def setEvaluator(self, value):
+        """
+        Sets the value of :py:attr:`evaluator`.
+        """
+        return self._set(evaluator=value)
+
     def getEvaluator(self):
         """
         Gets the value of evaluator or its default value.
@@ -190,29 +199,7 @@ class _ValidatorParams(HasSeed):
         return java_estimator, java_epms, java_evaluator
 
 
-class _CrossValidatorParams(_ValidatorParams):
-    """
-    Params for :py:class:`CrossValidator` and :py:class:`CrossValidatorModel`.
-
-    .. versionadded:: 3.0.0
-    """
-
-    numFolds = Param(Params._dummy(), "numFolds", "number of folds for cross validation",
-                     typeConverter=TypeConverters.toInt)
-
-    def __init__(self, *args):
-        super(_CrossValidatorParams, self).__init__(*args)
-        self._setDefault(numFolds=3)
-
-    @since("1.4.0")
-    def getNumFolds(self):
-        """
-        Gets the value of numFolds or its default value.
-        """
-        return self.getOrDefault(self.numFolds)
-
-
-class CrossValidator(Estimator, _CrossValidatorParams, HasParallelism, HasCollectSubModels,
+class CrossValidator(Estimator, ValidatorParams, HasParallelism, HasCollectSubModels,
                      MLReadable, MLWritable):
     """
 
@@ -226,8 +213,6 @@ class CrossValidator(Estimator, _CrossValidatorParams, HasParallelism, HasCollec
     >>> from pyspark.ml.classification import LogisticRegression
     >>> from pyspark.ml.evaluation import BinaryClassificationEvaluator
     >>> from pyspark.ml.linalg import Vectors
-    >>> from pyspark.ml.tuning import CrossValidatorModel
-    >>> import tempfile
     >>> dataset = spark.createDataFrame(
     ...     [(Vectors.dense([0.0]), 0.0),
     ...      (Vectors.dense([0.4]), 1.0),
@@ -241,23 +226,16 @@ class CrossValidator(Estimator, _CrossValidatorParams, HasParallelism, HasCollec
     >>> cv = CrossValidator(estimator=lr, estimatorParamMaps=grid, evaluator=evaluator,
     ...     parallelism=2)
     >>> cvModel = cv.fit(dataset)
-    >>> cvModel.getNumFolds()
-    3
     >>> cvModel.avgMetrics[0]
     0.5
-    >>> path = tempfile.mkdtemp()
-    >>> model_path = path + "/model"
-    >>> cvModel.write().save(model_path)
-    >>> cvModelRead = CrossValidatorModel.read().load(model_path)
-    >>> cvModelRead.avgMetrics
-    [0.5, ...
     >>> evaluator.evaluate(cvModel.transform(dataset))
-    0.8333...
-    >>> evaluator.evaluate(cvModelRead.transform(dataset))
     0.8333...
 
     .. versionadded:: 1.4.0
     """
+
+    numFolds = Param(Params._dummy(), "numFolds", "number of folds for cross validation",
+                     typeConverter=TypeConverters.toInt)
 
     @keyword_only
     def __init__(self, estimator=None, estimatorParamMaps=None, evaluator=None, numFolds=3,
@@ -267,7 +245,7 @@ class CrossValidator(Estimator, _CrossValidatorParams, HasParallelism, HasCollec
                  seed=None, parallelism=1, collectSubModels=False)
         """
         super(CrossValidator, self).__init__()
-        self._setDefault(parallelism=1)
+        self._setDefault(numFolds=3, parallelism=1)
         kwargs = self._input_kwargs
         self._set(**kwargs)
 
@@ -283,27 +261,6 @@ class CrossValidator(Estimator, _CrossValidatorParams, HasParallelism, HasCollec
         kwargs = self._input_kwargs
         return self._set(**kwargs)
 
-    @since("2.0.0")
-    def setEstimator(self, value):
-        """
-        Sets the value of :py:attr:`estimator`.
-        """
-        return self._set(estimator=value)
-
-    @since("2.0.0")
-    def setEstimatorParamMaps(self, value):
-        """
-        Sets the value of :py:attr:`estimatorParamMaps`.
-        """
-        return self._set(estimatorParamMaps=value)
-
-    @since("2.0.0")
-    def setEvaluator(self, value):
-        """
-        Sets the value of :py:attr:`evaluator`.
-        """
-        return self._set(evaluator=value)
-
     @since("1.4.0")
     def setNumFolds(self, value):
         """
@@ -311,23 +268,12 @@ class CrossValidator(Estimator, _CrossValidatorParams, HasParallelism, HasCollec
         """
         return self._set(numFolds=value)
 
-    def setSeed(self, value):
+    @since("1.4.0")
+    def getNumFolds(self):
         """
-        Sets the value of :py:attr:`seed`.
+        Gets the value of numFolds or its default value.
         """
-        return self._set(seed=value)
-
-    def setParallelism(self, value):
-        """
-        Sets the value of :py:attr:`parallelism`.
-        """
-        return self._set(parallelism=value)
-
-    def setCollectSubModels(self, value):
-        """
-        Sets the value of :py:attr:`collectSubModels`.
-        """
-        return self._set(collectSubModels=value)
+        return self.getOrDefault(self.numFolds)
 
     def _fit(self, dataset):
         est = self.getOrDefault(self.estimator)
@@ -441,7 +387,7 @@ class CrossValidator(Estimator, _CrossValidatorParams, HasParallelism, HasCollec
         return _java_obj
 
 
-class CrossValidatorModel(Model, _CrossValidatorParams, MLReadable, MLWritable):
+class CrossValidatorModel(Model, ValidatorParams, MLReadable, MLWritable):
     """
 
     CrossValidatorModel contains the model with the highest average cross-validation
@@ -479,12 +425,9 @@ class CrossValidatorModel(Model, _CrossValidatorParams, MLReadable, MLWritable):
         if extra is None:
             extra = dict()
         bestModel = self.bestModel.copy(extra)
-        avgMetrics = list(self.avgMetrics)
-        subModels = [
-            [sub_model.copy() for sub_model in fold_sub_models]
-            for fold_sub_models in self.subModels
-        ]
-        return self._copyValues(CrossValidatorModel(bestModel, avgMetrics, subModels), extra=extra)
+        avgMetrics = self.avgMetrics
+        subModels = self.subModels
+        return CrossValidatorModel(bestModel, avgMetrics, subModels)
 
     @since("2.3.0")
     def write(self):
@@ -503,21 +446,11 @@ class CrossValidatorModel(Model, _CrossValidatorParams, MLReadable, MLWritable):
         Given a Java CrossValidatorModel, create and return a Python wrapper of it.
         Used for ML persistence.
         """
-        sc = SparkContext._active_spark_context
         bestModel = JavaParams._from_java(java_stage.bestModel())
-        avgMetrics = _java2py(sc, java_stage.avgMetrics())
         estimator, epms, evaluator = super(CrossValidatorModel, cls)._from_java_impl(java_stage)
 
-        py_stage = cls(bestModel=bestModel, avgMetrics=avgMetrics)
-        params = {
-            "evaluator": evaluator,
-            "estimator": estimator,
-            "estimatorParamMaps": epms,
-            "numFolds": java_stage.getNumFolds(),
-            "seed": java_stage.getSeed(),
-        }
-        for param_name, param_val in params.items():
-            py_stage = py_stage._set(**{param_name: param_val})
+        py_stage = cls(bestModel=bestModel).setEstimator(estimator)
+        py_stage = py_stage.setEstimatorParamMaps(epms).setEvaluator(evaluator)
 
         if java_stage.hasSubModels():
             py_stage.subModels = [[JavaParams._from_java(sub_model)
@@ -535,23 +468,16 @@ class CrossValidatorModel(Model, _CrossValidatorParams, MLReadable, MLWritable):
         """
 
         sc = SparkContext._active_spark_context
+        # TODO: persist average metrics as well
         _java_obj = JavaParams._new_java_obj("org.apache.spark.ml.tuning.CrossValidatorModel",
                                              self.uid,
                                              self.bestModel._to_java(),
-                                             _py2java(sc, self.avgMetrics))
+                                             _py2java(sc, []))
         estimator, epms, evaluator = super(CrossValidatorModel, self)._to_java_impl()
 
-        params = {
-            "evaluator": evaluator,
-            "estimator": estimator,
-            "estimatorParamMaps": epms,
-            "numFolds": self.getNumFolds(),
-            "seed": self.getSeed(),
-        }
-        for param_name, param_val in params.items():
-            java_param = _java_obj.getParam(param_name)
-            pair = java_param.w(param_val)
-            _java_obj.set(pair)
+        _java_obj.set("evaluator", evaluator)
+        _java_obj.set("estimator", estimator)
+        _java_obj.set("estimatorParamMaps", epms)
 
         if self.subModels is not None:
             java_sub_models = [[sub_model._to_java() for sub_model in fold_sub_models]
@@ -560,31 +486,11 @@ class CrossValidatorModel(Model, _CrossValidatorParams, MLReadable, MLWritable):
         return _java_obj
 
 
-class _TrainValidationSplitParams(_ValidatorParams):
+class TrainValidationSplit(Estimator, ValidatorParams, HasParallelism, HasCollectSubModels,
+                           MLReadable, MLWritable):
     """
-    Params for :py:class:`TrainValidationSplit` and :py:class:`TrainValidationSplitModel`.
+    .. note:: Experimental
 
-    .. versionadded:: 3.0.0
-    """
-
-    trainRatio = Param(Params._dummy(), "trainRatio", "Param for ratio between train and\
-     validation data. Must be between 0 and 1.", typeConverter=TypeConverters.toFloat)
-
-    def __init__(self, *args):
-        super(_TrainValidationSplitParams, self).__init__(*args)
-        self._setDefault(trainRatio=0.75)
-
-    @since("2.0.0")
-    def getTrainRatio(self):
-        """
-        Gets the value of trainRatio or its default value.
-        """
-        return self.getOrDefault(self.trainRatio)
-
-
-class TrainValidationSplit(Estimator, _TrainValidationSplitParams, HasParallelism,
-                           HasCollectSubModels, MLReadable, MLWritable):
-    """
     Validation for hyper-parameter tuning. Randomly splits the input dataset into train and
     validation sets, and uses evaluation metric on the validation set to select the best model.
     Similar to :class:`CrossValidator`, but only splits the set once.
@@ -592,38 +498,27 @@ class TrainValidationSplit(Estimator, _TrainValidationSplitParams, HasParallelis
     >>> from pyspark.ml.classification import LogisticRegression
     >>> from pyspark.ml.evaluation import BinaryClassificationEvaluator
     >>> from pyspark.ml.linalg import Vectors
-    >>> from pyspark.ml.tuning import TrainValidationSplitModel
-    >>> import tempfile
     >>> dataset = spark.createDataFrame(
     ...     [(Vectors.dense([0.0]), 0.0),
     ...      (Vectors.dense([0.4]), 1.0),
     ...      (Vectors.dense([0.5]), 0.0),
     ...      (Vectors.dense([0.6]), 1.0),
     ...      (Vectors.dense([1.0]), 1.0)] * 10,
-    ...     ["features", "label"]).repartition(1)
+    ...     ["features", "label"])
     >>> lr = LogisticRegression()
     >>> grid = ParamGridBuilder().addGrid(lr.maxIter, [0, 1]).build()
     >>> evaluator = BinaryClassificationEvaluator()
     >>> tvs = TrainValidationSplit(estimator=lr, estimatorParamMaps=grid, evaluator=evaluator,
-    ...     parallelism=1, seed=42)
+    ...     parallelism=2)
     >>> tvsModel = tvs.fit(dataset)
-    >>> tvsModel.getTrainRatio()
-    0.75
-    >>> tvsModel.validationMetrics
-    [0.5, ...
-    >>> path = tempfile.mkdtemp()
-    >>> model_path = path + "/model"
-    >>> tvsModel.write().save(model_path)
-    >>> tvsModelRead = TrainValidationSplitModel.read().load(model_path)
-    >>> tvsModelRead.validationMetrics
-    [0.5, ...
     >>> evaluator.evaluate(tvsModel.transform(dataset))
-    0.833...
-    >>> evaluator.evaluate(tvsModelRead.transform(dataset))
-    0.833...
+    0.8333...
 
     .. versionadded:: 2.0.0
     """
+
+    trainRatio = Param(Params._dummy(), "trainRatio", "Param for ratio between train and\
+     validation data. Must be between 0 and 1.", typeConverter=TypeConverters.toFloat)
 
     @keyword_only
     def __init__(self, estimator=None, estimatorParamMaps=None, evaluator=None, trainRatio=0.75,
@@ -633,7 +528,7 @@ class TrainValidationSplit(Estimator, _TrainValidationSplitParams, HasParallelis
                  parallelism=1, collectSubModels=False, seed=None)
         """
         super(TrainValidationSplit, self).__init__()
-        self._setDefault(parallelism=1)
+        self._setDefault(trainRatio=0.75, parallelism=1)
         kwargs = self._input_kwargs
         self._set(**kwargs)
 
@@ -650,50 +545,18 @@ class TrainValidationSplit(Estimator, _TrainValidationSplitParams, HasParallelis
         return self._set(**kwargs)
 
     @since("2.0.0")
-    def setEstimator(self, value):
-        """
-        Sets the value of :py:attr:`estimator`.
-        """
-        return self._set(estimator=value)
-
-    @since("2.0.0")
-    def setEstimatorParamMaps(self, value):
-        """
-        Sets the value of :py:attr:`estimatorParamMaps`.
-        """
-        return self._set(estimatorParamMaps=value)
-
-    @since("2.0.0")
-    def setEvaluator(self, value):
-        """
-        Sets the value of :py:attr:`evaluator`.
-        """
-        return self._set(evaluator=value)
-
-    @since("2.0.0")
     def setTrainRatio(self, value):
         """
         Sets the value of :py:attr:`trainRatio`.
         """
         return self._set(trainRatio=value)
 
-    def setSeed(self, value):
+    @since("2.0.0")
+    def getTrainRatio(self):
         """
-        Sets the value of :py:attr:`seed`.
+        Gets the value of trainRatio or its default value.
         """
-        return self._set(seed=value)
-
-    def setParallelism(self, value):
-        """
-        Sets the value of :py:attr:`parallelism`.
-        """
-        return self._set(parallelism=value)
-
-    def setCollectSubModels(self, value):
-        """
-        Sets the value of :py:attr:`collectSubModels`.
-        """
-        return self._set(collectSubModels=value)
+        return self.getOrDefault(self.trainRatio)
 
     def _fit(self, dataset):
         est = self.getOrDefault(self.estimator)
@@ -801,8 +664,10 @@ class TrainValidationSplit(Estimator, _TrainValidationSplitParams, HasParallelis
         return _java_obj
 
 
-class TrainValidationSplitModel(Model, _TrainValidationSplitParams, MLReadable, MLWritable):
+class TrainValidationSplitModel(Model, ValidatorParams, MLReadable, MLWritable):
     """
+    .. note:: Experimental
+
     Model from train validation split.
 
     .. versionadded:: 2.0.0
@@ -837,11 +702,8 @@ class TrainValidationSplitModel(Model, _TrainValidationSplitParams, MLReadable, 
             extra = dict()
         bestModel = self.bestModel.copy(extra)
         validationMetrics = list(self.validationMetrics)
-        subModels = [model.copy() for model in self.subModels]
-        return self._copyValues(
-            TrainValidationSplitModel(bestModel, validationMetrics, subModels),
-            extra=extra
-        )
+        subModels = self.subModels
+        return TrainValidationSplitModel(bestModel, validationMetrics, subModels)
 
     @since("2.3.0")
     def write(self):
@@ -862,23 +724,12 @@ class TrainValidationSplitModel(Model, _TrainValidationSplitParams, MLReadable, 
         """
 
         # Load information from java_stage to the instance.
-        sc = SparkContext._active_spark_context
         bestModel = JavaParams._from_java(java_stage.bestModel())
-        validationMetrics = _java2py(sc, java_stage.validationMetrics())
         estimator, epms, evaluator = super(TrainValidationSplitModel,
                                            cls)._from_java_impl(java_stage)
         # Create a new instance of this stage.
-        py_stage = cls(bestModel=bestModel,
-                       validationMetrics=validationMetrics)
-        params = {
-            "evaluator": evaluator,
-            "estimator": estimator,
-            "estimatorParamMaps": epms,
-            "trainRatio": java_stage.getTrainRatio(),
-            "seed": java_stage.getSeed(),
-        }
-        for param_name, param_val in params.items():
-            py_stage = py_stage._set(**{param_name: param_val})
+        py_stage = cls(bestModel=bestModel).setEstimator(estimator)
+        py_stage = py_stage.setEstimatorParamMaps(epms).setEvaluator(evaluator)
 
         if java_stage.hasSubModels():
             py_stage.subModels = [JavaParams._from_java(sub_model)
@@ -894,24 +745,17 @@ class TrainValidationSplitModel(Model, _TrainValidationSplitParams, MLReadable, 
         """
 
         sc = SparkContext._active_spark_context
+        # TODO: persst validation metrics as well
         _java_obj = JavaParams._new_java_obj(
             "org.apache.spark.ml.tuning.TrainValidationSplitModel",
             self.uid,
             self.bestModel._to_java(),
-            _py2java(sc, self.validationMetrics))
+            _py2java(sc, []))
         estimator, epms, evaluator = super(TrainValidationSplitModel, self)._to_java_impl()
 
-        params = {
-            "evaluator": evaluator,
-            "estimator": estimator,
-            "estimatorParamMaps": epms,
-            "trainRatio": self.getTrainRatio(),
-            "seed": self.getSeed(),
-        }
-        for param_name, param_val in params.items():
-            java_param = _java_obj.getParam(param_name)
-            pair = java_param.w(param_val)
-            _java_obj.set(pair)
+        _java_obj.set("evaluator", evaluator)
+        _java_obj.set("estimator", estimator)
+        _java_obj.set("estimatorParamMaps", epms)
 
         if self.subModels is not None:
             java_sub_models = [sub_model._to_java() for sub_model in self.subModels]

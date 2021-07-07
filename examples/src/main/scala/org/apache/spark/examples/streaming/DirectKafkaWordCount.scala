@@ -37,7 +37,7 @@ import org.apache.spark.streaming.kafka010._
  *    consumer-group topic1,topic2
  */
 object DirectKafkaWordCount {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     if (args.length < 3) {
       System.err.println(s"""
         |Usage: DirectKafkaWordCount <brokers> <groupId> <topics>

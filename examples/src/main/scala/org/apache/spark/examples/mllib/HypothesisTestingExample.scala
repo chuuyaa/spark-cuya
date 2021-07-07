@@ -29,7 +29,7 @@ import org.apache.spark.rdd.RDD
 
 object HypothesisTestingExample {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
 
     val conf = new SparkConf().setAppName("HypothesisTestingExample")
     val sc = new SparkContext(conf)

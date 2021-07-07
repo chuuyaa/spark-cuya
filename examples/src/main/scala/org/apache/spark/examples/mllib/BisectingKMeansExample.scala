@@ -34,7 +34,7 @@ import org.apache.spark.mllib.linalg.{Vector, Vectors}
  */
 object BisectingKMeansExample {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val sparkConf = new SparkConf().setAppName("mllib.BisectingKMeansExample")
     val sc = new SparkContext(sparkConf)
 

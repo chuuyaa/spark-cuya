@@ -35,7 +35,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
  */
 // scalastyle:on
 object PageViewStream {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     if (args.length != 3) {
       System.err.println("Usage: PageViewStream <metric> <host> <port>")
       System.err.println("<metric> must be one of pageCounts, slidingPageCounts," +

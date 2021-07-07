@@ -24,7 +24,7 @@ import org.apache.spark.ml.feature.SQLTransformer
 import org.apache.spark.sql.SparkSession
 
 object SQLTransformerExample {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
     val spark = SparkSession
       .builder
       .appName("SQLTransformerExample")

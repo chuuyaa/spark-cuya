@@ -46,7 +46,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
  */
 object StreamingLogisticRegression {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]) {
 
     if (args.length != 4) {
       System.err.println(
