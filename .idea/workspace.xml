@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83d3a707-06d6-4277-a6b4-a2d741072bbe" name="Default Changelist" comment="second version">
+    <list default="true" id="83d3a707-06d6-4277-a6b4-a2d741072bbe" name="Default Changelist" comment="second version - commit 3">
       <change afterPath="$PROJECT_DIR$/conf/docker.properties.template" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/conf/spark-defaults.conf.template" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/examples/jars/scopt_2.11-3.7.0.jar" afterDir="false" />
@@ -151,6 +151,7 @@
       <change afterPath="$PROJECT_DIR$/sbin/start-shuffle-service.sh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sbin/stop-shuffle-service.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn/spark-2.4.8-yarn-shuffle.jar" beforeDir="false" afterPath="$PROJECT_DIR$/yarn/spark-2.4.8-yarn-shuffle.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn/spark-3.0.1-yarn-shuffle.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jars/spark-catalyst_2.11-2.4.8.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +210,7 @@
       <workItem from="1624635660995" duration="586000" />
       <workItem from="1624638275525" duration="1171000" />
       <workItem from="1624678954013" duration="588000" />
-      <workItem from="1625632051334" duration="2180000" />
+      <workItem from="1625632051334" duration="3548000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1624513785260</created>
@@ -232,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625632689920</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="second version">
+      <created>1625635374565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625635374565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +261,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="second version" />
-    <option name="LAST_COMMIT_MESSAGE" value="second version" />
+    <MESSAGE value="second version - commit 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="second version - commit 3" />
   </component>
 </project>
