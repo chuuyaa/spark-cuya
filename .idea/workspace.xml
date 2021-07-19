@@ -2,157 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d3a707-06d6-4277-a6b4-a2d741072bbe" name="Default Changelist" comment="second version - commit 3">
-      <change afterPath="$PROJECT_DIR$/conf/docker.properties.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/spark-defaults.conf.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/jars/scopt_2.11-3.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/jars/spark-examples_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/ml/JavaOneHotEncoderEstimatorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaLinearRegressionWithSGDExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/java/org/apache/spark/examples/mllib/JavaRegressionMetricsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/python/ml/onehot_encoder_estimator_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/python/streaming/direct_kafka_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/python/streaming/flume_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/python/streaming/kafka_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/ml/OneHotEncoderEstimatorExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/LinearRegression.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/LinearRegressionWithSGDExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/PCAExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/src/main/scala/org/apache/spark/examples/mllib/RegressionMetricsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/antlr4-runtime-4.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/aopalliance-repackaged-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/arrow-format-0.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/arrow-memory-0.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/arrow-vector-0.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/breeze-macros_2.11-0.13.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/breeze_2.11-0.13.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/chill-java-0.9.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/chill_2.11-0.9.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/commons-compress-1.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/commons-lang3-3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/curator-client-2.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/curator-framework-2.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/curator-recipes-2.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/flatbuffers-1.2.0-3f79e055.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-annotations-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-auth-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-client-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-common-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-hdfs-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-app-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-common-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-core-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-jobclient-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-mapreduce-client-shuffle-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-yarn-api-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-yarn-client-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-yarn-common-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-yarn-server-common-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hadoop-yarn-server-web-proxy-2.6.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hk2-api-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hk2-locator-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hk2-utils-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/hppc-0.7.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/htrace-core-3.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/httpcore-4.4.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jackson-annotations-2.6.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jackson-core-2.6.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jackson-databind-2.6.7.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jackson-dataformat-yaml-2.6.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jackson-module-jaxb-annotations-2.6.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jackson-module-paranamer-2.7.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jackson-module-scala_2.11-2.6.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/javassist-3.18.1-GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/javax.annotation-api-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/javax.inject-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/javax.ws.rs-api-2.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jcl-over-slf4j-1.7.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jersey-client-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jersey-common-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jersey-container-servlet-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jersey-container-servlet-core-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jersey-guava-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jersey-media-jaxb-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jersey-server-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/joda-time-2.9.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/json4s-ast_2.11-3.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/json4s-core_2.11-3.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/json4s-jackson_2.11-3.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/json4s-scalap_2.11-3.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jsr305-1.3.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jtransforms-2.4.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/jul-to-slf4j-1.7.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/kubernetes-client-4.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/kubernetes-model-4.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/kubernetes-model-common-4.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/logging-interceptor-3.12.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/lz4-java-1.4.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/machinist_2.11-0.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/macro-compat_2.11-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/metrics-core-3.1.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/metrics-graphite-3.1.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/metrics-json-3.1.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/metrics-jvm-3.1.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/netty-3.9.9.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/okhttp-3.12.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/orc-core-1.5.5-nohive.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/orc-mapreduce-1.5.5-nohive.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/orc-shims-1.5.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/osgi-resource-locator-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/py4j-0.10.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/pyrolite-4.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/scala-compiler-2.11.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/scala-library-2.11.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/scala-parser-combinators_2.11-1.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/scala-reflect-2.11.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/scala-xml_2.11-1.0.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/scalaj-http_2.11-2.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/shapeless_2.11-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/slf4j-api-1.7.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/slf4j-log4j12-1.7.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/snakeyaml-1.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/snappy-java-1.1.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-core_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-graphx_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-kubernetes_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-kvstore_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-launcher_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-mesos_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-mllib-local_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-mllib_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-network-common_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-network-shuffle_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-repl_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-sketch_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-sql_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-streaming_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-tags_2.11-2.4.8-tests.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-tags_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-unsafe_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spark-yarn_2.11-2.4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spire-macros_2.11-0.13.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/spire_2.11-0.13.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/stream-2.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/univocity-parsers-2.7.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/validation-api-1.1.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/xbean-asm6-shaded-4.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/xercesImpl-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jars/zookeeper-3.4.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/docs/epytext.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/lib/py4j-0.10.7-src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/ml/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/mllib/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/sql/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/streaming/flume.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/streaming/kafka.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/streaming/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/test_broadcast.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/test_serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/pyspark/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbin/start-shuffle-service.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sbin/stop-shuffle-service.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn/spark-2.4.8-yarn-shuffle.jar" beforeDir="false" afterPath="$PROJECT_DIR$/yarn/spark-2.4.8-yarn-shuffle.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn/spark-3.0.1-yarn-shuffle.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jars/spark-catalyst_2.11-2.4.8.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,19 +35,6 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -210,7 +47,7 @@
       <workItem from="1624635660995" duration="586000" />
       <workItem from="1624638275525" duration="1171000" />
       <workItem from="1624678954013" duration="588000" />
-      <workItem from="1625632051334" duration="3548000" />
+      <workItem from="1625632051334" duration="4944000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1624513785260</created>
@@ -240,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625635374565</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="second version - commit 3">
+      <created>1625641341644</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625641341644</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
